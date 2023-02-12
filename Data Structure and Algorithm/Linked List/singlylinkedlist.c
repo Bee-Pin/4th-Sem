@@ -21,49 +21,7 @@ void prompt();
  {
  	int choice;
  	printf("1. Insert at beginning   \n2. Insert at Middle   \n3. Insert at end   \n4. Delete at beginning   \n5. Delete at middle   \n6. Delete at end   \n7. Display   \n8. Exit\n");
- 	while(1)
- 	{
- 	
- 		printf("\nEnter your choice : \n");
- 		scanf("%d",&choice);
- 		switch (choice )
- 		{
- 			case 1:
- 			insert_begin();
- 			break;
- 			
- 			case 2:
- 				insert_mid();
- 				break;
- 				
- 			case 3:
- 				insert_end();
- 				break;
- 				
- 			case 4:
- 				deletion_begin();
- 				break;
- 				
- 			case 5:
- 				deletion_mid();
- 				break;
- 				
- 			case 6:
- 				deletion_end();
- 				break;
- 			
- 			case 7:
- 				display();
- 				break;
- 				
- 			case 8:
- 				exit(0);
- 				
- 			default:
- 				printf("\nEnter a choice between 1-8 only\n");
- 				break;
- 		}
- 	}
+ 	prompt();
  }
  
  void insert_begin()
